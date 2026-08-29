@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IcyWhite | Mobile Teeth Whitening in Miami</title>
+<meta name="description" content="Miami's #1 mobile teeth whitening service. IcyWhite comes to your home for professional, one-session results — plus DIY paste and LED kits for whitening on your own time.">
+<link rel="canonical" href="https://icywhiteteeth.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IcyWhite">
+<meta property="og:title" content="IcyWhite | Mobile Teeth Whitening in Miami">
+<meta property="og:description" content="Miami's #1 mobile teeth whitening service. We come to you for professional, one-session results — in the comfort of your home.">
+<meta property="og:url" content="https://icywhiteteeth.com/">
+<meta property="og:image" content="https://icywhiteteeth.com/hero.png">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IcyWhite | Mobile Teeth Whitening in Miami">
+<meta name="twitter:description" content="Miami's #1 mobile teeth whitening service. We come to you for professional, one-session results.">
+<meta name="twitter:image" content="https://icywhiteteeth.com/hero.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="shortcut icon" href="favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<!-- Local Business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "IcyWhite",
+  "description": "Mobile teeth whitening service in Miami, FL. Professional in-home whitening sessions plus DIY paste and LED whitening kits.",
+  "url": "https://icywhiteteeth.com/",
+  "image": "https://icywhiteteeth.com/logo.png",
+  "priceRange": "$$",
+  "areaServed": {
+    "@type": "City",
+    "name": "Miami"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.instagram.com/icywhiteteeth/"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+  :root {
+    --ice: #1FAEDB;
+    --ice-deep: #0E7FA8;
+    --ink: #0C2A36;
+    --ink-soft: #4C6672;
+    --frost: #EFFBFE;
+    --mint: #BFF0E3;
+    --line: #DCEEF3;
+    --white: #FFFFFF;
+    --shade-1: #C9A876;
+    --shade-2: #D9BE94;
+    --shade-3: #E6D3B2;
+    --shade-4: #F0E4CB;
+    --shade-5: #F7EFDC;
+    --shade-6: #FBF7EC;
+    --shade-7: #FEFEFC;
+    --shade-8: #FFFFFF;
+    --diy-purple: #8B6FE0;
+    --diy-purple-deep: #6D4FC4;
+    --diy-frost: #F4F1FC;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.86);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-mark {
+    height: 120px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-pill {
+    padding: 11px 20px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    transition: filter 0.2s ease;
+  }
+
+  .nav-pill:hover { filter: brightness(1.08); }
+
+  .nav-pill-purple { background: var(--diy-purple); }
+
+  .nav-pill-blue { background: var(--ice); }
+
+  .nav-cta {
+    background: var(--ink);
+    color: var(--white);
+    padding: 11px 22px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+
+  .nav-cta:hover { background: var(--ice-deep); }
+
+  @media (max-width: 780px) {
+    .nav-pill { display: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 88px 32px 120px;
+    text-align: center;
+    position: relative;
+    background:
+      linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.6)),
+      url('hero.png');
+    background-size: cover;
+    background-position: center 35%;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--frost);
+    color: var(--ice-deep);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 16px 7px 12px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .eyebrow-dot {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 6.4vw, 84px);
+    font-weight: 700;
+    line-height: 1.02;
+    max-width: 960px;
+    margin: 0 auto;
+    color: var(--ink);
+  }
+
+  .hero h1 .accent {
+    color: var(--ice);
+  }
+
+  .hero p {
+    max-width: 520px;
+    margin: 26px auto 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 36px;
+  }
+
+  .btn-primary {
+    background: var(--ice);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 12px 24px -10px rgba(31,174,219,0.55);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 28px -10px rgba(31,174,219,0.65); }
+
+  .btn-ghost {
+    border: 1.5px solid var(--line);
+    color: var(--ink);
+    padding: 15px 28px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+  }
+
+  .btn-ghost:hover { border-color: var(--ice); }
+
+  /* ---------- SHADE MARQUEE (signature element) ---------- */
+  .marquee-section {
+    margin-top: 72px;
+    padding: 36px 0 46px;
+    background: linear-gradient(180deg, var(--frost) 0%, #FFFFFF 100%);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .marquee-label {
+    max-width: 1180px;
+    margin: 0 auto 22px;
+    padding: 0 32px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .marquee-label span:first-child {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .marquee-label .mono {
+    font-size: 13px;
+    color: var(--ice-deep);
+  }
+
+  .marquee-track-outer {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 18px;
+    animation: scroll-left 14s linear infinite;
+  }
+
+  .marquee-track-outer:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-25%); }
+  }
+
+  .shade-card {
+    flex-shrink: 0;
+    width: 260px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 20px 20px 18px;
+  }
+
+  .shade-card svg { display: block; width: 100%; height: auto; }
+
+  .shade-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    background: var(--frost);
+  }
+
+  .shade-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+  }
+
+  .shade-code {
+    font-size: 14px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .shade-swatch {
+    width: 13px;
+    height: 13px;
+    border-radius: 4px;
+    border: 1px solid rgba(12,42,54,0.12);
+  }
+
+  /* ---------- HOW IT WORKS ---------- */
+  .section {
+    padding: 108px 32px;
+  }
+
+  .section-head {
+    max-width: 700px;
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+
+  .section-head .eyebrow {
+    margin-bottom: 18px;
+    font-size: clamp(28px, 7.5vw, 52px);
+    font-weight: 700;
+    padding: 10px 28px 10px 20px;
+    gap: 14px;
+  }
+
+  .section-head .eyebrow-dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(16px, 5.5vw, 38px);
+    font-weight: 700;
+    line-height: 1.08;
+  }
+
+  .section-head p {
+    margin-top: 16px;
+    color: var(--ink-soft);
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .steps {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .result-grid {
+    max-width: 1000px;
+    margin: 0 auto 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .result-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--frost);
+    border: 1px solid var(--line);
+    aspect-ratio: 4 / 3;
+  }
+
+  .result-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 820px) {
+    .result-grid { grid-template-columns: 1fr; }
+  }
+
+  .step-card {
+    background: var(--frost);
+    border-radius: 22px;
+    padding: 32px 26px;
+  }
+
+  .step-index {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--ice-deep);
+    margin-bottom: 20px;
+  }
+
+  .step-card h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .step-card p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 820px) {
+    .steps { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- VIDEO RECAP ---------- */
+  .video-section {
+    text-align: center;
+  }
+
+  .video-container {
+    max-width: 360px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    background: var(--ink);
+    box-shadow: 0 24px 48px -20px rgba(12,42,54,0.35);
+  }
+
+  .recap-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background: var(--ink);
+  }
+
+  /* ---------- DIY INSTANT (purple paste) ---------- */
+  .diy-section {
+    background: var(--diy-frost);
+    border-radius: 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 88px 48px;
+  }
+
+  .diy-eyebrow {
+    background: #FFFFFF;
+    color: var(--diy-purple-deep);
+  }
+
+  .diy-product {
+    max-width: 260px;
+    margin: 0 auto 32px;
+  }
+
+  .diy-product img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+  }
+
+  .diy-image {
+    max-width: 1000px;
+    margin: 0 auto 28px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #FFFFFF;
+  }
+
+  .diy-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .diy-cta {
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .btn-purple {
+    display: inline-block;
+    background: var(--diy-purple);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 12px 24px -10px rgba(139,111,224,0.55);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  .btn-purple:hover {
+    transform: translateY(-2px);
+    background: var(--diy-purple-deep);
+    box-shadow: 0 16px 28px -10px rgba(139,111,224,0.65);
+  }
+
+  .diy-captions {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .diy-caption p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  .diy-bar {
+    margin-top: 16px;
+    height: 34px;
+    border-radius: 8px;
+    background: var(--diy-purple);
+  }
+
+  @media (max-width: 820px) {
+    .diy-captions { grid-template-columns: 1fr; }
+    .diy-section { padding: 56px 28px; border-radius: 24px; }
+  }
+
+  /* ---------- COMPARISON STAT BAND ---------- */
+  .stat-band {
+    background: var(--ink);
+    color: var(--white);
+    border-radius: 28px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 56px 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .stat-item .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--mint);
+  }
+
+  .stat-item .label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.68);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 780px) {
+    .stat-band { grid-template-columns: 1fr; padding: 40px 28px; }
+  }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonial-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .t-card {
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 28px 24px;
+  }
+
+  .t-shade {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ice-deep);
+    background: var(--frost);
+    padding: 5px 10px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+
+  .t-card p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+
+  .t-name {
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 820px) {
+    .testimonial-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-section {
+    text-align: center;
+    padding: 100px 32px 120px;
+  }
+
+  .cta-section h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.08;
+  }
+
+  .cta-section p {
+    margin: 18px auto 34px;
+    color: var(--ink-soft);
+    font-size: 17px;
+    max-width: 460px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 40px 32px;
+  }
+
+  .footer-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-inner .logo { font-size: 16px; }
+
+  .footer-inner .logo-mark { height: 40px; }
+
+  footer .mono {
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <img class="logo-mark" src="logo.png" alt="IcyWhite logo">
+    </div>
+    <div class="nav-actions">
+      <a href="#about" class="nav-pill nav-pill-blue">Our Mission</a>
+      <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="nav-cta">Schedule a Mobile Whitening</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>TEETH WHITENING,<br><span class="accent">COMFORT IN YOUR HOME</span></h1>
+  <p>Watch the results in only one session.</p>
+  <div class="hero-actions">
+    <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="btn-primary">Free purple strip with consultation</a>
+    <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost">Check us out</a>
+  </div>
+</section>
+
+<div class="marquee-section">
+  <div class="marquee-label">
+    <span>Results from real clients</span>
+  </div>
+  <div class="marquee-track-outer">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- cards injected twice below for seamless loop -->
+    </div>
+  </div>
+</div>
+
+<section class="section video-section" id="recap">
+  <div class="section-head">
+    <div class="eyebrow">Recap</div>
+    <h2>Here's a recap of our service to you.</h2>
+  </div>
+  <div class="video-container">
+    <video class="recap-video" controls playsinline preload="metadata" poster="hero.png">
+      <source src="icyrecap.mov" type="video/quicktime">
+      Your browser doesn't support embedded video. You can view the recap directly at icyrecap.mov.
+    </video>
+  </div>
+</section>
+
+<section class="section diy-section" id="diy">
+  <div class="section-head">
+    <div class="eyebrow diy-eyebrow">Purple Paste</div>
+    <h2>Instant whitening, on your own time.</h2>
+    <p>For customers whose time and looks mean everything, we offer a DIY purple paste that gives you instant teeth whitening for 48 hours after use. Here's how it works.</p>
+  </div>
+  <div class="diy-product"><img src="purple_paste.png" alt="IcyWhite V34 Colour Corrector purple paste bottle and box"></div>
+  <div class="diy-image"><img src="diypaste.png" alt="How to use the DIY purple paste, 3 steps: 1) Apply a pea-sized amount of the purple paste to your toothbrush. 2) Brush as you normally would, just like with regular toothpaste, for 2 minutes. 3) Rinse your mouth with clean water after brushing for instant whitening results lasting 48 hours."></div>
+  <div class="diy-cta">
+    <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="btn-purple">Schedule a Mobile Whitening</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head">
+    <div class="eyebrow">Our mission</div>
+    <h2>A confident smile shouldn't require a waiting room.</h2>
+    <p>IcyWhite started with a simple frustration: professional whitening meant taking time off, sitting in a dental chair, and paying office rates for something that should be simple. So we brought it to you instead — Miami's mobile whitening service, built around your schedule and your home.</p>
+  </div>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-index mono">CONVENIENCE</div>
+      <h3>We come to you</h3>
+      <p>No commute, no waiting room. We set up wherever you're most comfortable — your living room, your office, even a hotel room.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-index mono">COMFORT</div>
+      <h3>Gentle on real teeth</h3>
+      <p>Our cooled, low-sensitivity formula was chosen because too many people had given up on whitening after one harsh experience.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-index mono">CONFIDENCE</div>
+      <h3>Miami-made, Miami-proud</h3>
+      <p>We're a local mobile business built for this city — real results for real Miami smiles, one visit at a time.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="logo">
+      <img class="logo-mark" src="logo.png" alt="IcyWhite logo">
+    </div>
+    <span class="mono">MOCKUP · SHADE SCALE FOR ILLUSTRATION ONLY</span>
+  </div>
+</footer>
+
+<script>
+  // Each card shows a user-supplied photo (picture1.png ... picture4.png) against its shade code
+  function pictureCard(file, code) {
+    return `
+      <div class="shade-card">
+        <img class="shade-photo" src="${file}" alt="${code} shade result">
+        <div class="shade-meta">
+          <span class="shade-code mono">${code}</span>
+        </div>
+      </div>`;
+  }
+
+  const shades = [
+    ['picture1.png', 'A3'],
+    ['picture2.png', 'B2'],
+    ['picture3.png', 'A1'],
+    ['picture4.png', 'B1'],
+  ];
+
+  const cardsHtml = shades.map(([file, code]) => pictureCard(file, code)).join('');
+  // repeat 4x (paired with the -25% CSS loop) so wide viewports never run out of cards mid-scroll
+  document.getElementById('marqueeTrack').innerHTML = cardsHtml.repeat(4);
+</script>
+
+</body>
+</html>
