@@ -207,14 +207,7 @@
     z-index: 0;
   }
 
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.6));
-    z-index: 1;
-  }
-
-  .hero > *:not(.hero-video):not(.hero-overlay) {
+  .hero > *:not(.hero-video) {
     position: relative;
     z-index: 2;
   }
@@ -750,8 +743,6 @@
   <video class="hero-video" autoplay muted loop playsinline poster="hero.png">
     <source src="hero.mp4" type="video/mp4">
   </video>
-  <div class="hero-overlay"></div>
-  <h1>TEETH WHITENING,<br><span class="accent">COMFORT IN YOUR HOME</span></h1>
   <p>Watch the results in only one session.</p>
   <div class="hero-actions">
     <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="btn-primary">Free purple strip with consultation</a>
