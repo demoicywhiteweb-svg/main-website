@@ -261,7 +261,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 14px;
-    margin-top: 36px;
+    margin-top: clamp(140px, 32vh, 280px);
   }
 
   .btn-primary {
@@ -278,16 +278,18 @@
   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 28px -10px rgba(31,174,219,0.65); }
 
   .btn-ghost {
-    border: 1.5px solid var(--line);
+    background: var(--white);
+    border: 1.5px solid var(--white);
     color: var(--ink);
     padding: 15px 28px;
     border-radius: 100px;
     font-weight: 600;
     font-size: 15px;
-    transition: border-color 0.2s ease;
+    box-shadow: 0 12px 24px -10px rgba(12,42,54,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .btn-ghost:hover { border-color: var(--ice); }
+  .btn-ghost:hover { transform: translateY(-2px); box-shadow: 0 16px 28px -10px rgba(12,42,54,0.45); }
 
   /* ---------- SHADE MARQUEE (signature element) ---------- */
   .marquee-section {
