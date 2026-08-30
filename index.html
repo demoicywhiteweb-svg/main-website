@@ -520,11 +520,65 @@
     max-width: 1180px;
     margin: 0 auto;
     padding: 88px 48px;
+    text-align: center;
+  }
+
+  .diy-section-label {
+    margin-bottom: 20px;
+  }
+
+  .diy-section-label.eyebrow {
+    font-size: clamp(28px, 7.5vw, 52px);
+    font-weight: 700;
+    padding: 10px 28px 10px 20px;
+    gap: 14px;
+  }
+
+  .diy-subheading {
+    font-size: clamp(16px, 5.5vw, 38px);
+    font-weight: 700;
+    line-height: 1.08;
+    max-width: 700px;
+    margin: 0 auto 56px;
+  }
+
+  .diy-subsection {
+    margin: 0 auto;
+  }
+
+  .diy-sub-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--diy-purple-deep);
+    margin-bottom: 20px;
+  }
+
+  .diy-divider {
+    max-width: 200px;
+    height: 1px;
+    background: rgba(109,79,196,0.25);
+    margin: 56px auto;
   }
 
   .diy-eyebrow {
     background: #FFFFFF;
     color: var(--diy-purple-deep);
+  }
+
+  .diy-poster {
+    max-width: 420px;
+    margin: 0 auto 48px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 48px -20px rgba(109,79,196,0.4);
+  }
+
+  .diy-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .diy-product {
@@ -777,15 +831,26 @@
 </section>
 
 <section class="section diy-section" id="diy">
-  <div class="section-head">
-    <div class="eyebrow diy-eyebrow">Purple Paste</div>
-    <h2>Instant whitening, on your own time.</h2>
-    <p>For customers whose time and looks mean everything, we offer a DIY purple paste that gives you instant teeth whitening for 48 hours after use. Here's how it works.</p>
+  <div class="eyebrow diy-eyebrow diy-section-label">Purple Paste</div>
+  <h2 class="diy-subheading">Instant whitening, on your own time.</h2>
+
+  <div class="diy-subsection">
+    <div class="diy-sub-label">Confidence on the Go</div>
+    <div class="diy-poster"><img src="confidence.png" alt="IcyWhite: Confidence on the go. Professional results, anytime, anywhere. Purple toothpaste and V34 Colour Corrector kit."></div>
   </div>
-  <div class="diy-product"><img src="purple_paste.png" alt="IcyWhite V34 Colour Corrector purple paste bottle and box"></div>
-  <div class="diy-image"><img src="diypaste.png" alt="How to use the DIY purple paste, 3 steps: 1) Apply a pea-sized amount of the purple paste to your toothbrush. 2) Brush as you normally would, just like with regular toothpaste, for 2 minutes. 3) Rinse your mouth with clean water after brushing for instant whitening results lasting 48 hours."></div>
-  <div class="diy-cta">
-    <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="btn-purple">Schedule a Mobile Whitening</a>
+
+  <div class="diy-divider"></div>
+
+  <div class="diy-subsection">
+    <div class="diy-sub-label">How It Works</div>
+    <div class="section-head">
+      <p>For customers whose time and looks mean everything, we offer a DIY purple paste that gives you instant teeth whitening for 48 hours after use. Here's how it works.</p>
+    </div>
+    <div class="diy-product"><img src="purple_paste.png" alt="IcyWhite V34 Colour Corrector purple paste bottle and box"></div>
+    <div class="diy-image"><img src="diypaste.png" alt="How to use the DIY purple paste, 3 steps: 1) Apply a pea-sized amount of the purple paste to your toothbrush. 2) Brush as you normally would, just like with regular toothpaste, for 2 minutes. 3) Rinse your mouth with clean water after brushing for instant whitening results lasting 48 hours."></div>
+    <div class="diy-cta">
+      <a href="https://app.acuityscheduling.com/schedule.php?owner=26678564&ref=booking_button" target="_blank" rel="noopener" class="btn-purple">Schedule a Mobile Whitening</a>
+    </div>
   </div>
 </section>
 
