@@ -823,7 +823,7 @@
     <h2>Here's a recap of our service to you.</h2>
   </div>
   <div class="video-container">
-    <video class="recap-video" controls playsinline preload="metadata" poster="hero.png">
+    <video id="recapVideo" class="recap-video" controls muted playsinline preload="metadata" poster="hero.png">
       <source src="icyrecap.mp4" type="video/mp4">
       Your browser doesn't support embedded video. You can view the recap directly at icyrecap.mp4.
     </video>
@@ -910,6 +910,23 @@
   const cardsHtml = shades.map(([file, code]) => pictureCard(file, code)).join('');
   // repeat 4x (paired with the -25% CSS loop) so wide viewports never run out of cards mid-scroll
   document.getElementById('marqueeTrack').innerHTML = cardsHtml.repeat(4);
+
+  // Autoplay the recap video once it's scrolled into view; pause when it scrolls out.
+  // Starts muted (required by browsers for autoplay) — the visible controls let the
+  // person unmute or pause manually.
+  const recapVideo = document.getElementById('recapVideo');
+  if (recapVideo) {
+    const recapObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          recapVideo.play().catch(() => {});
+        } else {
+          recapVideo.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+    recapObserver.observe(recapVideo);
+  }
 </script>
 
 </body>
