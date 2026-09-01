@@ -769,6 +769,21 @@
 
   .footer-inner .logo-mark { height: 40px; }
 
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover { color: var(--diy-purple-deep); }
+
   footer .mono {
     font-size: 12px;
     color: var(--ink-soft);
@@ -883,7 +898,10 @@
     <div class="logo">
       <img class="logo-mark" src="logo.png" alt="IcyWhite logo">
     </div>
-    <span class="mono">MOCKUP · SHADE SCALE FOR ILLUSTRATION ONLY</span>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/ponsphaera/" target="_blank" rel="noopener">Proud partner of Ponsphaera</a>
+    </div>
   </div>
 </footer>
 
