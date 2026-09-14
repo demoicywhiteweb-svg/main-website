@@ -14,6 +14,26 @@
   gtag('config', 'G-DTN0HN6Z3M');
 </script>
 
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1623745602789208');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1623745602789208&ev=PageView&noscript=1"
+  />
+</noscript>
+<!-- End Meta Pixel Code -->
+
 <title>IcyWhite Teeth | Mobile Teeth Whitening in Miami</title>
 <meta name="description" content="Miami's #1 mobile teeth whitening service. IcyWhite Teeth comes to your home for professional, one-session results — plus DIY paste and LED kits for whitening on your own time.">
 <link rel="canonical" href="https://www.icywhiteteeth.com/">
@@ -879,7 +899,7 @@
     </div>
     <div class="nav-actions">
       <a href="#about" class="nav-pill nav-pill-blue">Our Mission</a>
-      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="nav-cta">Schedule a Mobile Whitening</a>
+      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="nav-cta" onclick="fbq('track', 'InitiateCheckout');">Schedule a Mobile Whitening</a>
     </div>
   </div>
 </nav>
@@ -890,8 +910,8 @@
   </video>
   <p>Watch the results in only one session.</p>
   <div class="hero-actions">
-    <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-primary">Free purple strip with consultation</a>
-    <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost">Check us out</a>
+    <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">Free purple strip with consultation</a>
+    <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost" onclick="fbq('track', 'Subscribe');">Check us out</a>
   </div>
 </section>
 
@@ -938,7 +958,7 @@
     <div class="diy-product"><img src="purple_paste.png" alt="IcyWhite V34 Colour Corrector purple paste bottle and box"></div>
     <div class="diy-image"><img src="diypaste.png" alt="How to use the DIY purple paste, 3 steps: 1) Apply a pea-sized amount of the purple paste to your toothbrush. 2) Brush as you normally would, just like with regular toothpaste, for 2 minutes. 3) Rinse your mouth with clean water after brushing for instant whitening results lasting 48 hours."></div>
     <div class="diy-cta">
-      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-purple">Schedule a Mobile Whitening</a>
+      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-purple" onclick="fbq('track', 'InitiateCheckout');">Schedule a Mobile Whitening</a>
     </div>
   </div>
 </section>
@@ -1029,6 +1049,7 @@
     rel="noopener"
     class="whatsapp-float"
     aria-label="Message IcyWhite on WhatsApp"
+    onclick="fbq('track', 'Contact');"
   >
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.31.65 4.47 1.78 6.31L4 29l7.87-1.75A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Z" fill="var(--diy-purple)"/>
