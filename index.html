@@ -899,7 +899,7 @@
     </div>
     <div class="nav-actions">
       <a href="#about" class="nav-pill nav-pill-blue">Our Mission</a>
-      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="nav-cta" onclick="fbq('track', 'InitiateCheckout');">Schedule a Mobile Whitening</a>
+      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="nav-cta fb-track" data-fb-name="Schedule a Mobile Whitening (Nav)" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Schedule a Mobile Whitening (Nav)'});">Schedule a Mobile Whitening</a>
     </div>
   </div>
 </nav>
@@ -910,8 +910,8 @@
   </video>
   <p>Watch the results in only one session.</p>
   <div class="hero-actions">
-    <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">Free purple strip with consultation</a>
-    <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost" onclick="fbq('track', 'Subscribe');">Check us out</a>
+    <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-primary fb-track" data-fb-name="Free Purple Strip with Consultation" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Free Purple Strip with Consultation'});">Free purple strip with consultation</a>
+    <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost fb-track" data-fb-name="Check Us Out (Instagram)" onclick="fbq('track', 'Subscribe', {content_name: 'Check Us Out (Instagram)'});">Check us out</a>
   </div>
 </section>
 
@@ -958,7 +958,7 @@
     <div class="diy-product"><img src="purple_paste.png" alt="IcyWhite V34 Colour Corrector purple paste bottle and box"></div>
     <div class="diy-image"><img src="diypaste.png" alt="How to use the DIY purple paste, 3 steps: 1) Apply a pea-sized amount of the purple paste to your toothbrush. 2) Brush as you normally would, just like with regular toothpaste, for 2 minutes. 3) Rinse your mouth with clean water after brushing for instant whitening results lasting 48 hours."></div>
     <div class="diy-cta">
-      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-purple" onclick="fbq('track', 'InitiateCheckout');">Schedule a Mobile Whitening</a>
+      <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-purple fb-track" data-fb-name="Schedule a Mobile Whitening (Purple Paste)" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Schedule a Mobile Whitening (Purple Paste)'});">Schedule a Mobile Whitening</a>
     </div>
   </div>
 </section>
@@ -1039,6 +1039,27 @@
     }, { threshold: 0.5 });
     recapObserver.observe(recapVideo);
   }
+
+  // Fire a Meta Pixel custom event the first time each tracked button scrolls
+  // into view, tagged with that button's name so it's distinguishable in
+  // Events Manager from the click-based InitiateCheckout/Contact/Subscribe events.
+  const fbTrackedButtons = document.querySelectorAll('.fb-track');
+  if (fbTrackedButtons.length && 'IntersectionObserver' in window) {
+    const seenButtons = new WeakSet();
+    const buttonViewObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !seenButtons.has(entry.target)) {
+          seenButtons.add(entry.target);
+          const name = entry.target.getAttribute('data-fb-name') || 'Untitled Button';
+          if (typeof fbq === 'function') {
+            fbq('trackCustom', 'ButtonScrolledIntoView', { content_name: name });
+          }
+          buttonViewObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    fbTrackedButtons.forEach((btn) => buttonViewObserver.observe(btn));
+  }
 </script>
 
 <div class="whatsapp-widget">
@@ -1047,9 +1068,10 @@
     href="https://wa.me/17864748201?text=Hi%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20a%20consultation%20for%20a%20teeth%20whitening%20appointment"
     target="_blank"
     rel="noopener"
-    class="whatsapp-float"
+    class="whatsapp-float fb-track"
+    data-fb-name="WhatsApp Float Button"
     aria-label="Message IcyWhite on WhatsApp"
-    onclick="fbq('track', 'Contact');"
+    onclick="fbq('track', 'Contact', {content_name: 'WhatsApp Float Button'});"
   >
     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.31.65 4.47 1.78 6.31L4 29l7.87-1.75A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Z" fill="var(--diy-purple)"/>
