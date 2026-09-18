@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Immediate redirect to the Acuity booking page -->
+<meta http-equiv="refresh" content="0; url=https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTN0HN6Z3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTN0HN6Z3M');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1623745602789208');
+  fbq('track', 'PageView');
+  fbq('track', 'InitiateCheckout', {content_name: 'Direct Book Link (/book)'});
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1623745602789208&ev=PageView&noscript=1"
+  />
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<title>Book Your Appointment | IcyWhite Teeth</title>
+<meta name="description" content="Book your mobile teeth whitening appointment with IcyWhite Teeth in Miami.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.icywhiteteeth.com/book">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="shortcut icon" href="favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --diy-purple: #8B6FE0;
+    --diy-purple-deep: #6D4FC4;
+    --diy-frost: #F4F1FC;
+    --ink: #0C2A36;
+    --ink-soft: #4C6672;
+    --white: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--white);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .redirect-card {
+    max-width: 440px;
+  }
+
+  .logo-mark {
+    height: 90px;
+    width: auto;
+    display: block;
+    margin: 0 auto 32px;
+  }
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 30px;
+  }
+
+  .spinner {
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 30px;
+    border: 3px solid var(--diy-frost);
+    border-top-color: var(--diy-purple);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .btn-purple {
+    display: inline-block;
+    background: var(--diy-purple);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 12px 24px -10px rgba(139,111,224,0.55);
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .btn-purple:hover {
+    transform: translateY(-2px);
+    background: var(--diy-purple-deep);
+  }
+
+  .home-link {
+    display: block;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+
+  .home-link:hover { color: var(--diy-purple-deep); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .spinner { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="redirect-card">
+  <img class="logo-mark" src="logo.png" alt="IcyWhite Teeth">
+  <div class="spinner"></div>
+  <h1>Taking you to booking&hellip;</h1>
+  <p>You're being redirected to our scheduling page. If nothing happens in a few seconds, tap the button below.</p>
+  <a class="btn-purple" href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button">Schedule a Mobile Whitening</a>
+  <a class="home-link" href="/">Back to icywhiteteeth.com</a>
+</div>
+
+<script>
+  // Backup redirect in case the meta refresh is blocked or delayed.
+  setTimeout(function () {
+    window.location.replace('https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button');
+  }, 1200);
+</script>
+
+</body>
+</html>
