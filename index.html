@@ -34,23 +34,24 @@
 </noscript>
 <!-- End Meta Pixel Code -->
 
-<title>IcyWhite Teeth | Mobile Teeth Whitening in Miami</title>
-<meta name="description" content="Miami's #1 mobile teeth whitening service. IcyWhite Teeth comes to your home for professional, one-session results — plus DIY paste and LED kits for whitening on your own time.">
+<title>Teeth Whitening Miami | Mobile Teeth Whitening — IcyWhite Teeth</title>
+<meta name="description" content="Teeth whitening Miami — IcyWhite Teeth is a mobile teeth whitening service that comes to you. Professional, one-session results in the comfort of your home. Book a free consultation.">
+<meta name="keywords" content="teeth whitening Miami, mobile teeth whitening, teeth whitening near me, Miami teeth whitening service, at home teeth whitening Miami, professional teeth whitening Miami">
 <link rel="canonical" href="https://www.icywhiteteeth.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="IcyWhite Teeth">
-<meta property="og:title" content="IcyWhite Teeth — Mobile Teeth Whitening">
-<meta property="og:description" content="Miami's #1 mobile teeth whitening service. We come to you for professional, one-session results — in the comfort of your home.">
+<meta property="og:title" content="Teeth Whitening Miami | Mobile Teeth Whitening">
+<meta property="og:description" content="Teeth whitening Miami, delivered to your door. We come to you for professional, one-session results — in the comfort of your home.">
 <meta property="og:url" content="https://www.icywhiteteeth.com/">
 <meta property="og:image" content="https://www.icywhiteteeth.com/logo.png">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="IcyWhite Teeth — Mobile Teeth Whitening">
-<meta name="twitter:description" content="Miami's #1 mobile teeth whitening service. We come to you for professional, one-session results.">
+<meta name="twitter:title" content="Teeth Whitening Miami | Mobile Teeth Whitening">
+<meta name="twitter:description" content="Teeth whitening Miami, delivered to your door. Professional, one-session results wherever you are.">
 <meta name="twitter:image" content="https://www.icywhiteteeth.com/logo.png">
 
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -64,7 +65,8 @@
   "@context": "https://schema.org",
   "@type": "HealthAndBeautyBusiness",
   "name": "IcyWhite Teeth",
-  "description": "Mobile teeth whitening service in Miami, FL. Professional in-home whitening sessions plus DIY paste and LED whitening kits.",
+  "description": "Teeth whitening Miami — mobile teeth whitening service in Miami, FL. We come to you for professional in-home whitening sessions, plus DIY purple paste for whitening on your own time.",
+  "slogan": "Teeth whitening Miami — we go to you",
   "url": "https://www.icywhiteteeth.com/",
   "image": "https://www.icywhiteteeth.com/logo.png",
   "priceRange": "$$",
@@ -221,29 +223,28 @@
   }
 
   /* ---------- HERO ---------- */
-  .hero {
-    padding: 88px 32px 120px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  .hero-video-band {
+    background: #000000;
+    line-height: 0;
   }
 
   .hero-video {
-    position: absolute;
-    inset: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+    height: auto;
+    max-height: 56vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 
-  .hero > *:not(.hero-video) {
-    position: relative;
-    z-index: 2;
+  .hero {
+    padding: 56px 32px 64px;
+    text-align: center;
   }
 
   @media (max-width: 600px) {
-    .hero { padding: 56px 20px 64px; }
+    .hero { padding: 40px 20px 48px; }
+    .hero-video { max-height: 40vh; }
   }
 
   .eyebrow {
@@ -291,7 +292,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 14px;
-    margin-top: clamp(140px, 32vh, 280px);
+    margin-top: 32px;
   }
 
   .btn-primary {
@@ -888,9 +889,193 @@
       left: -4px;
     }
   }
+
+  /* ---------- HERO TITLE ---------- */
+  .hero-title {
+    display: inline-block;
+    margin: 0 auto 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-kicker {
+    display: block;
+    font-size: clamp(13px, 2.4vw, 16px);
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--diy-purple-deep);
+    background: var(--diy-frost);
+    padding: 7px 18px;
+    border-radius: 100px;
+    margin-bottom: 18px;
+  }
+
+  .hero-weship {
+    display: block;
+    font-size: clamp(42px, 9vw, 86px);
+    font-weight: 700;
+    line-height: 0.98;
+    color: var(--ink);
+  }
+
+  .hero p {
+    color: var(--ink-soft);
+  }
+
+  /* ---------- WE COME TO YOU BAND ---------- */
+  .comes-to-you {
+    background: var(--diy-purple);
+    color: var(--white);
+    padding: 16px 24px;
+  }
+
+  .comes-to-you-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 14px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .comes-to-you strong { font-weight: 700; }
+
+  .ctu-dot { opacity: 0.55; }
+
+  @media (max-width: 600px) {
+    .comes-to-you-inner { font-size: 13.5px; gap: 8px 10px; }
+  }
+
+  /* ---------- WELCOME MODAL ---------- */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(12,42,54,0.55);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity 0.28s ease;
+  }
+
+  .modal-overlay[hidden] { display: none; }
+
+  .modal-overlay.is-visible { opacity: 1; }
+
+  .modal-card {
+    position: relative;
+    background: var(--white);
+    border-radius: 26px;
+    max-width: 420px;
+    width: 100%;
+    padding: 44px 36px 32px;
+    text-align: center;
+    box-shadow: 0 30px 70px -20px rgba(12,42,54,0.45);
+    transform: translateY(14px) scale(0.98);
+    transition: transform 0.28s ease;
+  }
+
+  .modal-overlay.is-visible .modal-card {
+    transform: translateY(0) scale(1);
+  }
+
+  .modal-logo {
+    height: 64px;
+    width: auto;
+    display: block;
+    margin: 0 auto 22px;
+  }
+
+  .modal-card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(30px, 6vw, 40px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .modal-card p {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 26px;
+  }
+
+  .modal-cta { display: inline-block; }
+
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    background: transparent;
+    color: var(--ink-soft);
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .modal-close:hover {
+    background: var(--diy-frost);
+    color: var(--diy-purple-deep);
+  }
+
+  .modal-dismiss {
+    display: block;
+    margin: 18px auto 0;
+    border: 0;
+    background: transparent;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+
+  .modal-dismiss:hover { color: var(--diy-purple-deep); }
+
+  @media (max-width: 480px) {
+    .modal-card { padding: 38px 24px 26px; border-radius: 22px; }
+    .modal-logo { height: 54px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modal-overlay, .modal-card { transition: none; }
+  }
 </style>
 </head>
 <body>
+
+<div class="modal-overlay" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeModalTitle" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="welcomeModalClose" aria-label="Close">&times;</button>
+    <img class="modal-logo" src="logo.png" alt="IcyWhite Teeth">
+    <h2 id="welcomeModalTitle">We go to you.</h2>
+    <p>Schedule a consultation for an in-person teeth whitening mobile checkup.</p>
+    <a
+      class="btn-purple modal-cta"
+      href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button"
+      target="_blank"
+      rel="noopener"
+      onclick="fbq('track', 'InitiateCheckout', {content_name: 'Welcome Popup'});"
+    >Schedule a Consultation</a>
+    <button class="modal-dismiss" id="welcomeModalDismiss" type="button">Maybe later</button>
+  </div>
+</div>
 
 <nav>
   <div class="nav-inner">
@@ -904,16 +1089,35 @@
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero-video-band">
   <video class="hero-video" autoplay muted loop playsinline poster="hero.png">
     <source src="hero.mp4" type="video/mp4">
   </video>
+</section>
+
+<section class="hero">
+  <h1 class="hero-title">
+    <span class="hero-kicker">Teeth Whitening Miami</span>
+    <span class="hero-weship">WE GO TO YOU</span>
+  </h1>
   <p>Watch the results in only one session.</p>
   <div class="hero-actions">
     <a href="https://app.acuityscheduling.com/schedule/2cb8fbc8?ref=booking_button" target="_blank" rel="noopener" class="btn-primary fb-track" data-fb-name="Free Purple Strip with Consultation" onclick="fbq('track', 'InitiateCheckout', {content_name: 'Free Purple Strip with Consultation'});">Free purple strip with consultation</a>
     <a href="https://www.instagram.com/icywhiteteeth/" target="_blank" rel="noopener" class="btn-ghost fb-track" data-fb-name="Check Us Out (Instagram)" onclick="fbq('track', 'Subscribe', {content_name: 'Check Us Out (Instagram)'});">Check us out</a>
   </div>
 </section>
+
+<div class="comes-to-you">
+  <div class="comes-to-you-inner">
+    <span><strong>We come to you.</strong></span>
+    <span class="ctu-dot" aria-hidden="true">&bull;</span>
+    <span>Home, office or hotel</span>
+    <span class="ctu-dot" aria-hidden="true">&bull;</span>
+    <span>Anywhere in Miami</span>
+    <span class="ctu-dot" aria-hidden="true">&bull;</span>
+    <span>One session</span>
+  </div>
+</div>
 
 <div class="marquee-section">
   <div class="marquee-label">
@@ -1060,6 +1264,47 @@
     }, { threshold: 0.5 });
     fbTrackedButtons.forEach((btn) => buttonViewObserver.observe(btn));
   }
+
+  // Welcome popup: shows shortly after the page opens, once per browser session
+  // so returning visitors aren't nagged on every page view.
+  (function () {
+    const modal = document.getElementById('welcomeModal');
+    if (!modal) return;
+
+    const closeBtn = document.getElementById('welcomeModalClose');
+    const dismissBtn = document.getElementById('welcomeModalDismiss');
+    let alreadyShown = false;
+
+    try {
+      alreadyShown = sessionStorage.getItem('icywhiteWelcomeSeen') === '1';
+    } catch (e) {}
+
+    function openModal() {
+      modal.hidden = false;
+      requestAnimationFrame(() => modal.classList.add('is-visible'));
+      document.body.style.overflow = 'hidden';
+      try { sessionStorage.setItem('icywhiteWelcomeSeen', '1'); } catch (e) {}
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-visible');
+      document.body.style.overflow = '';
+      setTimeout(() => { modal.hidden = true; }, 280);
+    }
+
+    if (!alreadyShown) {
+      setTimeout(openModal, 1200);
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    dismissBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.hidden) closeModal();
+    });
+  })();
 </script>
 
 <div class="whatsapp-widget">
